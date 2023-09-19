@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7793bf77.css",
+    "main.js": "/static/js/main.3dae7163.js",
+    "static/media/landscape1.jpg": "/static/media/landscape1.c223bd9f31ebf8889bde.jpg",
+    "static/media/landscape2.jpg": "/static/media/landscape2.64541d5b09d967655174.jpg",
+    "static/media/portrait1.jpg": "/static/media/portrait1.fc368d33183b7acb9f48.jpg",
+    "static/media/logo3.svg": "/static/media/logo3.19687d20af9337635888a4cee2c69cb3.svg",
+    "static/media/polgar_logo_1.svg": "/static/media/polgar_logo_1.135efe7788491ac2b8b73f60d1657ab5.svg",
+    "static/media/polgar_logo2.svg": "/static/media/polgar_logo2.4e91b9514787918f66bd9d8c9ebdeecd.svg",
+    "index.html": "/index.html",
+    "main.7793bf77.css.map": "/static/css/main.7793bf77.css.map",
+    "main.3dae7163.js.map": "/static/js/main.3dae7163.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7793bf77.css",
+    "static/js/main.3dae7163.js"
+  ]
+}
