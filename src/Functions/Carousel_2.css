@@ -1,0 +1,15 @@
+.carousel2 .carousel-slider {
+    height: 100% !important; 
+}
+
+
+.carousel2 .slide img {
+    height: 100%; /* to maintain the aspect ratio and not stretch the image */
+    width:100%;
+    overflow:hidden;
+    object-fit:cover;
+}
+
+.teszt {
+    overflow:hidden;
+}

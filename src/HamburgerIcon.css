@@ -1,0 +1,25 @@
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .line {
+    height: 3px;
+    background:var(--main-font-color) !important;
+    transition: all 0.3s;
+  }
+  
+  .transparent .line {
+    background:var(--main-font-color) !important;
+	}
+
+
+
+  .hamburger:hover .line-middle {
+    transform: translateX(-10px);
+  }
+  
