@@ -1,10 +1,10 @@
 import { useRef } from "react";
-import { FaTimes, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 import "./nav.css";
 import { NavLink } from "react-router-dom";
 import HamburgerIcon from "./HamburgerIcon";
-import {ReactComponent as Logo} from './Img/SVG/polgar_logo_1.svg'
-import {ReactComponent as Logo2} from './Img/SVG/polgar_logo2.svg'
+/* import {ReactComponent as Logo} from './Img/SVG/polgar_logo_1.svg'
+import {ReactComponent as Logo2} from './Img/SVG/polgar_logo2.svg' */
 import {ReactComponent as Logo3} from './Img/SVG/logo3.svg'
 
 function Navbar() {
@@ -35,10 +35,10 @@ function Navbar() {
             <FaTimes />
           </button>
           
-          <button className="nav-social-icons">
+        {/*   <button className="nav-social-icons">
           < FaInstagram  />
           <FaFacebook />
-          </button>
+          </button> */}
         
 
         </nav>

@@ -1,7 +1,7 @@
 import React from 'react';
-import Landscape1 from '../../Img/landscape1.jpg'
+/* import Landscape1 from '../../Img/landscape1.jpg'
 import Landscape2 from '../../Img/landscape2.jpg'
-import Portrait1 from '../../Img/portrait1.jpg'
+import Portrait1 from '../../Img/portrait1.jpg' */
 import './Home.css'
 import Footer from '../Footer/Footer'
 import Carousel1 from '../../Functions/Carousel_1';
