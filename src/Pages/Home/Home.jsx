@@ -60,7 +60,7 @@ function Home() {
 
   <div className="contact-container">
     <div className="contact-left">
-    <Parallax  bgImage="https://images.unsplash.com/photo-1694861651735-555e68428c72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" bgImageAlt="the cat">
+    <Parallax  bgImage="https://images.unsplash.com/photo-1627932708947-55dad0dbd138?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2075&q=80" bgImageAlt="the cat">
         <div className="contact-image">
 
         </div>
@@ -70,7 +70,7 @@ function Home() {
 
     <div className="contact-right">
   {/*   <h1>Vedd fel velünk a kapcsolatot!</h1> */}
-    <h2>Kérdéseid vannak vagy további információra lenne szükséged? Írj nekünk, és hamarosan válaszolunk!</h2>
+   {/*  <h2>Kérdéseid vannak vagy további információra lenne szükséged? Írj nekünk, és hamarosan válaszolunk!</h2> */}
 
 {/* <div className="faq">
   <h1>Néhány gyakran ismételt kérdés:</h1>

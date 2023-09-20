@@ -142,12 +142,12 @@ font-size:calc(12px + 0.5vw)
 
 .contact-left {
 
-    width:50%;
+    width:60%;
     height:800px;
 }
 
 .contact-right {
-    width:50%;
+    width:40%;
     height:800px;
     display:flex;
     flex-direction:column;
