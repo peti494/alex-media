@@ -5,8 +5,8 @@ import Portrait1 from '../../Img/portrait1.jpg' */
 import './Home.css'
 import Footer from '../Footer/Footer'
 import Carousel1 from '../../Functions/Carousel_1';
-import Carousel2 from '../../Functions/Carousel_2';
-import Carousel3 from '../../Functions/Carousel_3';
+/* import Carousel2 from '../../Functions/Carousel_2';
+import Carousel3 from '../../Functions/Carousel_3'; */
 import { Parallax } from 'react-parallax';
 import { NavLink } from "react-router-dom";
 
@@ -14,14 +14,19 @@ function Home() {
   return ( 
   <div className="main-container">
     <div className="main-hero">
-  <div className="main-left" >
-  <Carousel1 />
-  </div>  
+        <div className="main-left" >
+        <div className="carousel-title">
+<h1>Polgar Alex</h1>
+<h2>Portré, esküvő és marketing fényképész.</h2>
+</div> 
+        <Carousel1 />
+        </div>  
   
-  <div className="main-right">
+  {/* <div className="main-right">
   <Carousel2 />
   <Carousel3 />
-  </div>
+  </div> */}
+
   </div>
 
 <div className="home-description">
@@ -43,7 +48,7 @@ function Home() {
 </div>
   <div className="parallax-container">
   
-    <Parallax  bgImage="https://images.unsplash.com/photo-1541789094913-f3809a8f3ba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" bgImageAlt="the cat">
+    <Parallax  bgImage="https://images.unsplash.com/photo-1654949004884-cfbbdf200657?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" bgImageAlt="the cat">
         <div className="parallax-content">
         <button className="nav-button">
         <NavLink to="/references">Nézd meg a referenciákat</NavLink>

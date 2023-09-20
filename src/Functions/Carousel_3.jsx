@@ -2,6 +2,16 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";  // This imports the necessary CSS
 
+/* import { createClient } from 'contentful';
+import { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } from '../client' */
+
+/* const client = createClient({
+    space: CONTENTFUL_SPACE_ID,
+    accessToken: CONTENTFUL_ACCESS_TOKEN,
+  });
+ */
+
+
 
 const Carousel3 = () => {
     // Sample array of images. You can replace this with your actual image paths

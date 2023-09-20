@@ -1,8 +1,18 @@
 .carousel .carousel-slider {
-    height: 90vh !important; 
+    height: 100vh !important; 
 }
 
 
 .carousel .slide img {
-    max-height: 90vh; /* to maintain the aspect ratio and not stretch the image */
+    max-height: 100vh; /* to maintain the aspect ratio and not stretch the image */
 }
+
+
+.carouselimages {
+
+    height:100vh !important;
+    width:100vw !important;
+    overflow:hidden !important;
+
+}
+

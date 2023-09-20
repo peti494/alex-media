@@ -1,0 +1,81 @@
+.reference-container-body {
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:50px;
+}
+
+
+.individual-cover {
+    height: calc(100vh - 50px - 1.5vw);
+    width: 30vw;
+    margin: 1.5vw 1.5vw 0vw 1.5vw;
+    position: relative; /* Make this a positioned ancestor for the cover-title */
+}
+
+.cover-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    height: 100%;
+}
+
+.cover-images {
+    overflow: hidden;
+    object-fit: cover;
+    height: 100%;
+    transition: 0.2s ease-in;
+    z-index: 1; /* Put the image behind the title */
+}
+.cover-images:hover { 
+    transition: 0.2s ease-in;
+    filter: grayscale(75%);
+}
+
+.cover-title {
+    text-align: center;
+    font-size: 48px;
+    width: 50%;
+    position: absolute; /* Absolutely position the title */
+    top: 50%; /* Start it 50% from the top */
+    left: 50%; /* Start it 50% from the left */
+    transform: translate(-50%, -50%); /* Center it perfectly */
+    z-index: 2; /* Make sure the title is above the image */
+    color: white; /* Optional: Make the text color white for better visibility */
+   text-transform:uppercase;
+}
+
+.album-grid {
+    position: relative; /* Make sure the parent is positioned */
+    z-index: 1;
+background-image:url('./filmgrain.jpg');
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+padding-bottom:120px;
+}
+
+.album-grid::before {
+    content: ""; /* Important for the pseudo-element to show */
+    position: absolute; /* Position it absolutely... */
+    top: 0; /* ...covering the whole parent div */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image:url('./filmgrain.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: grayscale(100%); /* Apply the grayscale filter */
+    z-index: -1; /* Place it behind the actual content */
+}
+
+
+.album-images {
+height:90vh;
+margin:60px auto 0px auto;
+border:16px solid #434343;
+}

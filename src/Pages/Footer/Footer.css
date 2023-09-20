@@ -21,6 +21,8 @@ font-weight:700;
 font-size:calc(12px + 1vw);
 text-transform:uppercase;
 letter-spacing: 12px;
+border-bottom: 1px solid white;
+width:40%;
 }
 
 .footer-social-media {
