@@ -10,10 +10,11 @@ import { CONTENTFUL_SPACE_ID, CONTENTFUL_ACCESS_TOKEN } from '../client'
 const client = createClient({
     space: CONTENTFUL_SPACE_ID,
     accessToken: CONTENTFUL_ACCESS_TOKEN,
+    
   });
+  
 
 const Carousel1 = () => {
-   
     const [images, setImages] = useState([{}]);
 
 
@@ -52,7 +53,7 @@ const Carousel1 = () => {
 
     return (
 
-        <Carousel useKeyboardArrows={true} key={images.length} swipeable={true}  showThumbs={false} infiniteLoop={true} autoPlay={true} interval={8000} transitionTime={2000} showArrows={false} showStatus={false} showIndicators={false} stopOnHover={true} width="100vw">
+        <Carousel useKeyboardArrows={true} key={images.length} swipeable={false}  showThumbs={false} infiniteLoop={true} autoPlay={true} interval={8000} transitionTime={2000} showArrows={false} showStatus={false} showIndicators={true} stopOnHover={true} width="100vw">
           
             
             {images.map((image) => (
