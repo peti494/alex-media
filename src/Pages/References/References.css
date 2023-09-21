@@ -79,3 +79,10 @@ max-height:90vh;
 max-width:100%;
 object-fit:cover;
 }
+
+.masonry-container {
+
+    max-width:1600px;
+    margin:120px auto auto auto;
+
+}

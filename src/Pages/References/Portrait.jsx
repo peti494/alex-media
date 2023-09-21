@@ -46,9 +46,6 @@ function Portrait() {
         const prevImage = new Image();
         prevImage.src = images[(currentImageIndex + images.length - 1) % images.length].src;
     }
-    
-    
-    if (!images) return null;
 
 
     const handleImageClick = (index) => {
@@ -61,11 +58,12 @@ function Portrait() {
 
     return (
         <div>
+            <div className="masonry-container">
             <ResponsiveMasonry columnsCountBreakPoints={{750: 1, 1024: 2}}>
                 <Masonry gutter='10px' >
                     {images.map((image, index) => (
                         <img 
-                            key={image.src} 
+                            key={index} 
                             style={{ maxHeight: "100%", maxWidth:"100%", display: "block", aspectRatio: "auto", overflow: "hidden", objectFit: "cover", cursor: "pointer" }}
                             src={image.src} 
                             alt={image.legend}
@@ -74,14 +72,17 @@ function Portrait() {
                     ))}
                 </Masonry>
             </ResponsiveMasonry>
+            </div>
             {lightboxOpen && (
                 <Lightbox
-                    ref={lightboxRef}
+                  
+                    
                     mainSrc={images[currentImageIndex].src}
                     nextSrc={images[(currentImageIndex + 1) % images.length].src}
                     prevSrc={images[(currentImageIndex + images.length - 1) % images.length].src}
                     onCloseRequest={() => setLightboxOpen(false)}
-                    onMovePrevRequest={() =>
+                    onAfterOpen={() => setCurrentImageIndex((currentImageIndex + 1) % images.length)}
+                    onMovePrevRequest={() => 
                         setCurrentImageIndex((currentImageIndex + images.length - 1) % images.length)
                     }
                     onMoveNextRequest={() =>
